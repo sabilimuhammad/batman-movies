@@ -1,0 +1,25 @@
+.law-dialog--container {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.2s linear;
+
+  .law-dialog--content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90vw;
+
+    .law-dialog--close-btn {
+      position: absolute;
+      top: 5%;
+      right: 5%;
+    }
+  }
+}
