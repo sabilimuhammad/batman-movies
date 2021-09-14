@@ -1,6 +1,6 @@
 <template>
   <law-card>
-    <div class="d-flex cards">
+    <div class="cards">
       <div class="d-flex card">
         <img
           :src="detail.Poster"
@@ -9,7 +9,7 @@
         >
         <div class="movie-card--title">
           <router-link :to="`/${detail.imdbID}`">
-            <h3>{{ detail.Title }} - {{ detail.Year }}</h3>
+            <h4>{{ detail.Title }} - {{ detail.Year }}</h4>
           </router-link>
           <p>{{ detail.Type }}</p>
         </div>
